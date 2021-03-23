@@ -15,7 +15,7 @@ def main():
     test_data = [i for i in zip(test_images, test_labels)]
     to_ratios_and_vectors(test_data)
 
-    net = Network([784, 16, 16, 10])
+    net = Network([784, 50, 50, 10])
     net.train(training_data, 30, 100, 2.0, test_data)
 
 
